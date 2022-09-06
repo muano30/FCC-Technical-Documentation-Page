@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Technical Document Page</title>
+</head>
+
+<body>
+
+    <main id="main-doc">
+        <nav id="navbar">
+            <header style= "font-size:1.5rem; margin-left:10%" >Css Documentation</header>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#what_you_should_already_know">What you should already know</a>
+            <a class="nav-link" href="#css_grid">Css Grid</a>
+            <a class="nav-link" href="#css_styling">Css Styling</a>
+            <a class="nav-link" href="#css_flexbox">Css FlexBox</a>
+
+        </nav>
+        <section class="main-section" id="introduction">
+                <header>Introduction</header>
+  
+         
+        
+
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simply designed
+                language intended to simplify the process of making web pages presentable.
+                CSS allows you to apply styles to web pages. More importantly, CSS enables
+                you to do this independent of the HTML that makes up each web page.
+                CSS is easy to learn and understand, but it provides powerful control over the
+                presentation of an HTML document.</p>
+
+                <ul>
+                    <li>Before the Flexbox Layout module, there were four layout modes:</li>
+
+
+                    <li>Block, for sections in a webpage</li>
+<li>Inline, for text</li>
+<li>Table, for two-dimensional table data</li>
+<li>Positioned, for explicit position of an element</li>
+                </ul>
+
+        </section>
+        <section class="main-section" id="what_you_should_already_know">
+            <header>What you should already know</header>
+            <p>
+
+                1.Absolute positioning
+                If you want control over where an element lives on our website at all times, absolute
+                positioning is the key to making this happen. If you think of your browser as one big
+                bounding box, absolute positioning allows you to control exactly where in that box an element
+                will stay. Use top, right, bottom and left, accompanied by a pixel value to control where an element
+                stays.
+
+                <code>position:absolute;
+                top:20px;
+                right:20px</code>
+
+                The CSS above sets the position of an element to stay 20px from the top and right edges of your browser.
+                You can
+                also use absolute positioning inside of a div.
+            </p>
+
+            <p> 2.Overriding all styles
+                This should be used sparingly, because if you do this for everything, you’re going to find yourself in
+                trouble
+                in the long run. However, if you want to override another CSS style for a specific element, use
+                !important after the
+                style in your css. For example, if I wanted the H2 headers in a specific section of my site to be red
+                instead of blue,
+                I would use the following CSS:
+
+                <code>.section h2 { color:red !important; }</code>
+            </p>
+        </section>
+
+        <section class="main-section" id="css_grid">
+            <header>Css Grid</header>
+
+            <p>To define a Grid use display:grid or display:inline-grid on the parent element. You can then create
+                a grid using the grid-template-columns and grid-template-rows properties.
+
+                I am using the grid-gap property to create a gap between my columns and rows of 10px. This property is
+                a shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
+
+                All direct children of the parent now become grid items and the auto-placement algorithm lays them out,
+                one in each grid cell. Creating extra rows as needed.</p>
+            <p>
+                CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of
+                size,
+                position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout
+                enables an
+                author to align elements into columns and rows</p>
+
+
+        </section>
+        <section class="main-section" id="css_styling">
+            <header>Css Styling</header>
+
+            <p>1. Vertical alignment (for one line of text)
+                You will use this in a CSS navigation menu, I can almost guarantee that. The key is to make the height
+                of the menu and the line-height of the text the same. I see this technique a lot when I go back and edit
+                existing websites for clients. Here’s an example:
+
+                <code>.nav li{
+                    line-height:50px;
+                    height:50px;
+                }</code>
+            </p>
+
+            <p>2. Hover effects
+                This is used for buttons, text links, bock sections of your site, icons, and more. If you want something
+                to
+                change colors when someone hovers their mouse over it, use the same CSS, but add :hover to it and change
+                the
+                styling. Here’s an example:
+
+                <code>.entry h2{
+                        font-size:36px;
+                        color:#000;
+                        font-weight:800;
+                    }</code>
+                    <main id="main-doc">
+                        <nav id="navbar">
+                            <header style= font-size:1.5rem >CSS DOCUMENTATION</header>
+                            <a class="nav-link" href="#introduction">Introduction</a>
+                            <a class="nav-link" href="#what_you_should_already_know">What you should already know</a>
+                            <a class="nav-link" href="#css_grid">Css Grid</a>
+                            <a class="nav-link" href="#css_styling">Css Styling</a>
+                            <a class="nav-link" href="#css_flexbox">Css FlexBox</a>
+                
+                        </nav>
+                        <section class="main-section" id="introduction">
+                                <header>Introduction</header>
+                  
+                         
+                        
+                
+                            <p>Cascading Style Sheets, fondly referred to as CSS, is a simply designed
+                                language intended to simplify the process of making web pages presentable.
+                                CSS allows you to apply styles to web pages. More importantly, CSS enables
+                                you to do this independent of the HTML that makes up each web page.
+                                CSS is easy to learn and understand, but it provides powerful control over the
+                                presentation of an HTML document.</p>
+                
+                                <ul>
+                                    <li>Before the Flexbox Layout module, there were four layout modes:</li>
+                
+                
+                                    <li>Block, for sections in a webpage</li>
+                <li>Inline, for text</li>
+                <li>Table, for two-dimensional table data</li>
+                <li>Positioned, for explicit position of an element</li>
+                                </ul>
+                
+                        </section>
+                        <section class="main-section" id="what_you_should_already_know">
+                            <header>What you should already know</header>
+                            <p>
+                
+                                1. Absolute positioning
+                                If you want control over where an element lives on our website at all times, absolute
+                                positioning is the key to making this happen. If you think of your browser as one big
+                                bounding box, absolute positioning allows you to control exactly where in that box an element
+                                will stay. Use top, right, bottom and left, accompanied by a pixel value to control where an element
+                                stays.
+                
+                                <code>position:absolute;
+                                top:20px;
+                                right:20px</code>
+                
+                                The CSS above sets the position of an element to stay 20px from the top and right edges of your browser.
+                                You can
+                                also use absolute positioning inside of a div.
+                            </p>
+                
+                            <p> 2. Overriding all styles
+                                This should be used sparingly, because if you do this for everything, you’re going to find yourself in
+                                trouble
+                                in the long run. However, if you want to override another CSS style for a specific element, use
+                                !important after the
+                                style in your css. For example, if I wanted the H2 headers in a specific section of my site to be red
+                                instead of blue,
+                                I would use the following CSS:
+                
+                                <code>.section h2 { color:red !important; }</code>
+                            </p>
+                        </section>
+                
+                        <section class="main-section" id="css_grid">
+                            <header>Css Grid</header>
+                
+                            <p>To define a Grid use display:grid or display:inline-grid on the parent element. You can then create
+                                a grid using the grid-template-columns and grid-template-rows properties.
+                
+                                I am using the grid-gap property to create a gap between my columns and rows of 10px. This property is
+                                a shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
+                
+                                All direct children of the parent now become grid items and the auto-placement algorithm lays them out,
+                                one in each grid cell. Creating extra rows as needed.</p>
+                            <p>
+                                CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of
+                                size,
+                                position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout
+                                enables an
+                                author to align elements into columns and rows</p>
+                
+                
+                        </section>
+                        <section class="main-section" id="css_styling">
+                            <header>Css Styling</header>
+                
+                            <p>1. Vertical alignment (for one line of text)
+                                You will use this in a CSS navigation menu, I can almost guarantee that. The key is to make the height
+                                of the menu and the line-height of the text the same. I see this technique a lot when I go back and edit
+                                existing websites for clients. Here’s an example:
+                
+                                <code>.nav li{
+                                    line-height:50px;
+                                    height:50px;
+                                }</code>
+                            </p>
+                
+                            <p>2. Hover effects
+                                This is used for buttons, text links, bock sections of your site, icons, and more. If you want something
+                                to
+                                change colors when someone hovers their mouse over it, use the same CSS, but add :hover to it and change
+                                the
+                                styling. Here’s an example:
+                
+                                <code>.entry h2{
+                                        font-size:36px;
+                                        color:#000;
+                                        font-weight:800;
+                                    }</code>
+                                    
+                                    <code>.entry h2:hover{
+                                        color:#f00;
+                                    }</code>
+                                What this does is it changes the color of your h2 tag from black to red when someone hovers over it. The
+                                great thing about using :hover is that you don’t have to declare the font-size or weight again, if it
+                                isn’t changing. It only changes what you specify.
+                            </p>
+                        </section>
+                        <section class="main-section" id="css_flexbox">
+                
+                            <header>Css FlexBox</header>
+                            <p>The flex-basis is what defines the size of that item in terms of the space
+                                it leaves as available space. The initial value of this property is auto — in
+                                this case the browser looks to see if the items have a size. In the example above,
+                                all of the items have a width of 100 pixels and so this is used as the flex-basis.
+                
+                                If the items don't have a size then the content's size is used as the flex-basis. This is
+                                why when we just declare display: flex on the parent to create flex items, the items all move
+                                into a row and take only as much space as they need to display their contents.</p>
+                
+                            <p>With the flex-grow property set to a positive integer, flex items can grow along the
+                                main axis from their flex-basis. This will cause the item to stretch and take up any
+                                available space on that axis, or a proportion of the available space if other items are
+                                allowed to grow too. If we gave all of our items in the example above a flex-grow value of 1
+                                then the available space in the flex container would be equally shared between our items and they
+                                would stretch to fill the container on the main axis.
+                
+                                The flex-grow property can be used to distribute space in proportion. If we give our first item a
+                                flex-grow value of 2, and the other items a value of 1 each, 2 parts of the available space will be
+                                given to
+                                the first item (100px out of 200px in the case of the example above), 1 part each the other two (50px
+                                each out of
+                                the 200px total).</p>
+                
+                            <p>Where the flex-grow property deals with adding space in the main axis, the flex-shrink property controls
+                                how it is taken
+                                away. If we do not have enough space in the container to lay out our items, and flex-shrink is set to a
+                                positive integer,
+                                then the item can become smaller than the flex-basis. As with flex-grow, different values can be
+                                assigned in order to cause
+                                one item to shrink faster than others — an item with a higher value set for flex-shrink will shrink
+                                faster than its siblings
+                                that have lower values.
+                
+                                The minimum size of the item will be taken into account while working out the actual amount of shrinkage
+                                that will happen, which means
+                                that flex-shrink has the potential to appear less consistent than flex-grow in behavior. We'll therefore
+                                take a more detailed look at how
+                                this algorithm works in the article Controlling Ratios of items along the main axis.
+                
+                                Note: These values for flex-grow and flex-shrink are proportions. Typically if we had all of our items
+                                set to flex: 1 1 200px and then wanted
+                                one item to grow at twice the rate, we would set that item to flex: 2 1 200px. However you could also
+                                use flex: 10 1 200px and flex: 20 1 200px if you wanted.</p>
+                        </section>
+                    </main>
+                
+                    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+                    <code>.entry h2:hover{
+                        color:#f00;
+                    }</code>
+                What this does is it changes the color of your h2 tag from black to red when someone hovers over it. The
+                great thing about using :hover is that you don’t have to declare the font-size or weight again, if it
+                isn’t changing. It only changes what you specify.
+            </p>
+        </section>
+        <section class="main-section" id="css_flexbox">
+
+            <header>Css FlexBox</header>
+            <p>The flex-basis is what defines the size of that item in terms of the space
+                it leaves as available space. The initial value of this property is auto — in
+                this case the browser looks to see if the items have a size. In the example above,
+                all of the items have a width of 100 pixels and so this is used as the flex-basis.
+
+                If the items don't have a size then the content's size is used as the flex-basis. This is
+                why when we just declare display: flex on the parent to create flex items, the items all move
+                into a row and take only as much space as they need to display their contents.</p>
+
+            <p>With the flex-grow property set to a positive integer, flex items can grow along the
+                main axis from their flex-basis. This will cause the item to stretch and take up any
+                available space on that axis, or a proportion of the available space if other items are
+                allowed to grow too. If we gave all of our items in the example above a flex-grow value of 1
+                then the available space in the flex container would be equally shared between our items and they
+                would stretch to fill the container on the main axis.
+
+                The flex-grow property can be used to distribute space in proportion. If we give our first item a
+                flex-grow value of 2, and the other items a value of 1 each, 2 parts of the available space will be
+                given to
+                the first item (100px out of 200px in the case of the example above), 1 part each the other two (50px
+                each out of
+                the 200px total).</p>
+
+            <p>Where the flex-grow property deals with adding space in the main axis, the flex-shrink property controls
+                how it is taken
+                away. If we do not have enough space in the container to lay out our items, and flex-shrink is set to a
+                positive integer,
+                then the item can become smaller than the flex-basis. As with flex-grow, different values can be
+                assigned in order to cause
+                one item to shrink faster than others — an item with a higher value set for flex-shrink will shrink
+                faster than its siblings
+                that have lower values.
+
+                The minimum size of the item will be taken into account while working out the actual amount of shrinkage
+                that will happen, which means
+                that flex-shrink has the potential to appear less consistent than flex-grow in behavior. We'll therefore
+                take a more detailed look at how
+                this algorithm works in the article Controlling Ratios of items along the main axis.
+
+                Note: These values for flex-grow and flex-shrink are proportions. Typically if we had all of our items
+                set to flex: 1 1 200px and then wanted
+                one item to grow at twice the rate, we would set that item to flex: 2 1 200px. However you could also
+                use flex: 10 1 200px and flex: 20 1 200px if you wanted.</p>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
